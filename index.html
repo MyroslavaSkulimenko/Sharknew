@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+      :root {
+        --color-blue: #4b6bd8;
+        --color-grey: #f4f4f4;
+      }
+      .background-is-grey {
+        background: var(--color-grey);
+      }
+      .color-is-grey {
+        color: #bfc0c0;
+      }
+      * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      aside {
+        position: fixed;
+        width: 250px;
+        left: 0;
+        background: var(--color-grey);
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+      }
+      .sub-menu {
+        height: 100%;
+        display: flex;
+        position: absolute;
+        left: 290px;
+        border: 2px solid var(--color-grey);
+        width: 350px;
+        top: 0;
+        position: fixed;
+        flex-direction: column;
+      }
+      main {
+        position: absolute;
+        height: 100%;
+        width: 500px;
+        left: 644px;
+        top: 0;
+        border-right: 2px solid var(--color-grey);
+      }
+      header {
+        position: fixed;
+        top: 0;
+        height: 85px;
+        border-bottom: 2px solid var(--color-grey);
+        width: 500px;
+        display: flex;
+      }
+      .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo__icon {
+        font-size: 30px;
+        margin-right: 15px;
+        color: var(--color-blue);
+      }
+      .chat {
+        margin-top: 85px;
+        background: linear-gradient(246deg, #f4f4f4, transparent);
+      height: 100vh;
+      }
+      .chat__date{
+        color: gray;
+      }
+      .chat__info{
+        color: gray;
+      }
+      .chat__sms{
+        background: white;
+        border-radius: 8px 8px 0 8px;
+        width: 50%;
+        padding: 10px;
+      }
+      .chat__user--main{
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <div class="logo">
+        <span class="logo__icon"><i class="las la-box"></i></span>
+        <h3 class="logo__name">Shark</h3>
+      </div>
+      <nav class="menu">
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"></span>
+          <a class="menu__list" href=""> Dashboard </a>
+        </div>
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"
+            ><i class="las la-layer-group"></i
+          ></span>
+          <a class="menu__list" href=""> Dashboard </a>
+        </div>
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"
+            ><i class="las la-chart-area"></i
+          ></span>
+          <a class="menu__list" href=""> Statistics </a>
+        </div>
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"
+            ><i class="las la-comment-alt"></i
+          ></span>
+          <a class="menu__list" href=""> Support </a>
+        </div>
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"
+            ><i class="las la-inbox"></i
+          ></span>
+          <a class="menu__list" href=""> Inbox </a>
+        </div>
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"
+            ><i class="las la-rocket"></i
+          ></span>
+          <a class="menu__list" href=""> Goals </a>
+        </div>
+        <div class="menu__punkt">
+          <span class="menu__icon color-is-grey"
+            ><i class="las la-link"></i
+          ></span>
+          <a class="menu__list" href=""> Links </a>
+        </div>
+      </nav>
+      <section class="project">
+        <h4 class="project__title color-is-grey">Projects</h4>
+        <div class="project__list">
+          <span class="project__icon"
+            ><i class="las la-project-diagram"></i
+          ></span>
+          <a class="project__name" href=""> Callipso </a>
+          <span class="project__new-massege">+4</span>
+        </div>
+        <div class="project__list">
+          <span class="project__icon"
+            ><i class="las la-project-diagram"></i
+          ></span>
+          <a class="project__name" href=""> Callipso </a>
+          <span class="project__new-massege">+4</span>
+        </div>
+        <div class="project__list">
+          <span class="project__icon"
+            ><i class="las la-project-diagram"></i
+          ></span>
+          <a class="project__name" href=""> Callipso </a>
+          <span class="project__new-massege">+4</span>
+        </div>
+        <div class="project__list">
+          <span class="project__icon"
+            ><i class="las la-project-diagram"></i
+          ></span>
+          <a class="project__name" href=""> Callipso </a>
+          <span class="project__new-massege">+4</span>
+        </div>
+        <button class="project__more">Show more</button>
+      </section>
+    </aside>
+    <section class="sub-menu">
+      <div class="sub-menu__title-wrapper">
+        <h2 class="sub-menu__title">Inbox</h2>
+        <button class="sub-menu__more">+</button>
+      </div>
+      <div class="sub-menu__option">
+        <h4 class="">General</h4>
+        <h4 class="">Total</h4>
+      </div>
+      <div class="sub-menu__massege-wrap">
+        <div class="sub-menu__massege background-is-grey">
+          <img
+            class="sub-menu__employee-avatar"
+            src="https://via.placeholder.com/48"
+            alt=""
+          />
+          <div class="sub-menu__employee-text">
+            <h4 class="sub-menu__employee-name">Michael.B</h4>
+            <h6 class="sub-menu__employee-position color-is-grey">
+              Project manager
+            </h6>
+            <h6 class="sub-menu__employee-massege-short">Sent you the file</h6>
+          </div>
+          <span class="sub-menu__employee-massege-count">2</span>
+        </div>
+      </div>
+    </section>
+    <main class="massege-main">
+      <header>
+        <div class="login">
+          <img
+            class="login__avatar"
+            src="https://via.placeholder.com/48"
+            alt="avatar"
+          />
+          <h4 class="login__name">Anna.O</h4>
+          <h6 class="login__status color-is-grey">Online</h6>
+        </div>
+        <div class="search">
+          <input class="search__input" type="text" placeholder="Search" />
+          <span class="search__icon"><i class="las la-search"></i></span>
+        </div>
+        <button class="button__voice"><i class="las la-microphone"></i></button>
+        <button class="button__goal"><i class="las la-bullseye"></i></button>
+      </header>
+      <section class="chat">
+        <h4 class="chat__date">21.09.22, Wednesday</h4>
+        <div class="chat__user chat__user--main">
+          <div class="chat__info chat__user--main">12:45</div>
+          <p class="chat__sms chat__user--main">Lorem ipsum dolor sit amet.</p>
+          <div class="chat__info chat__user--main">veiwed</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
